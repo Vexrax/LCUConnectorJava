@@ -9,7 +9,7 @@ This connector automatically gets the credietials for the API that is launched w
 
 
 
-# Dependancies 
+# Dependencies 
 The connector uses the Apache[HTTPComponent](https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html) library as a means to execute HTTP requests
 
 ## Usage example
