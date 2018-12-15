@@ -3,16 +3,25 @@ Making connecting to the League Of Legends Client easy.
 
 This connector automatically gets the credietials for the API that is launched when the League of Legends client is active. 
 
+# How To Install
+- [GitHub](https://github.com/Vexrax/LCUConnectorJava) `git clone https://github.com/Vexrax/LCUConnectorJava.git`
+- [Maven] Soon(TM)
+
+
+
+# Dependancies 
+The connector uses the [Apache HTTPComponent] (https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html) library as a means to execute HTTP requests
+
 ## Usage example
 
 ```
-	LeagueClient leagueClient = new LeagueClient("C:\\Riot Games\\League of Legends\\lockfile") ;
-    leagueClient.Connect();
-    JSONObject data = new JSONObject();
-    data.put("firstPreference", "MIDDLE");
-    data.put("secondPreference", "TOP");
+LeagueClient leagueClient = new LeagueClient("C:\\Riot Games\\League of Legends\\lockfile") ;
+leagueClient.Connect();
+JSONObject data = new JSONObject();
+data.put("firstPreference", "MIDDLE");
+data.put("secondPreference", "TOP");
 
-    HttpResponse response = leagueClient.MakeApiRequest(HttpMethod.Put, "/lol-lobby/v1/lobby/members/localMember/position-preferences", data.toJSONString());
+HttpResponse response = leagueClient.MakeApiRequest(HttpMethod.Put, "/lol-lobby/v1/lobby/members/localMember/position-preferences", data.toJSONString());
 ```
 
 # Java Certificate Issues
