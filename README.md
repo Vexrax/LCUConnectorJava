@@ -1,5 +1,5 @@
 # LCUConnectorJava
-Making connecting to the League Of Legends Client easy.
+Making connecting to the League Of Legends Client API (LCU) easy.
 
 This connector automatically gets the credietials for the API that is launched when the League of Legends client is active. 
 
