@@ -6,7 +6,7 @@ This connector automatically gets the credietials for the API that is launched w
 # How To Install
 - [GitHub](https://github.com/Vexrax/LCUConnectorJava) `git clone https://github.com/Vexrax/LCUConnectorJava.git`
 - [Maven] Soon(TM)
-
+- [Compiled Jars] Soon(TM)
 
 
 # Dependencies 
